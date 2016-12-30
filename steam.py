@@ -16,6 +16,8 @@ def SteamCMD(CMD='False'):
         SteamCmd = 'friends/status/offline'
     elif CMD == 'online':
         SteamCmd = 'friends/status/online'
+    elif CMD == 'add':
+        SteamCmd = 'open/activateproduct'
     else:
         return 'no valid command, look commands over here: https://developer.valvesoftware.com/wiki/Steam_browser_protocol'
         sys.exit(1)
